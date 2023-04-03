@@ -1,0 +1,87 @@
+React
+----------
+
+npx create-react-app appName
+
+to run
+--------
+npm start
+
+building blocks of react
+---------------------------
+html
+css
+js
+
+ Angular                     |               React
+------------                 |            --------------
+-framework of js             |             -library of js
+-real Dom                    |             -virtual DOM
+
+Advantages Of React
+---------------------
+1-react uses virtual dom (faster)
+2-reusable components
+3-jsx (javascript xml)
+                                         
+
+Components In React
+---------------------
+
+1-class Based -statefull components
+2-function Based - stateless components
+                                   
+
+<></>---empty fragment
+
+rfce
+-------
+to make component function in js file
+
+
+statefull components
+stateless components
+
+-react hooks 
+
+state
+-------
+object used to store datas inside a component in react
+
+useState - react -useState is a hook it comming from react library
+
+
+
+props (properts)
+-------
+to share datas from parent to child component
+
+destructuring
+
+
+Api call In js
+----------------
+
+Ajax
+----
+
+-XmlHttp
+-fetch
+-asynch await
+
+first working hook of a component
+--------------------------------------
+useEffect - it is the hook in react
+
+
+Redirection/Routing In React
+------------------------
+
+react-router-dom    - library used for Routing
+
+Browser Router - wrap the main component inside browser router component
+Route         - wrap the component inside Router which neeed redirection
+Routes         - wrap all the router if we set morethan one component paths         
+
+these 3 components used to routing it is comming from library)(react-router-dom)
+
