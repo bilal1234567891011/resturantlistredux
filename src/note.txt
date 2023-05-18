@@ -1,4 +1,4 @@
-React
+ React
 ----------
 
 npx create-react-app appName
@@ -42,7 +42,7 @@ to make component function in js file
 statefull components
 stateless components
 
--react hooks 
+-react hooks ---react 16.8
 
 state
 -------
@@ -85,3 +85,200 @@ Routes         - wrap all the router if we set morethan one component paths
 
 these 3 components used to routing it is comming from library)(react-router-dom)
 
+Link  - a component in react-router-dom used for redirection
+
+useParams - hook in react-router-dom used to access params
+
+
+
+REDUX
+----------------
+
+when coupling increases in a component there is chance for props drilling
+                                                           --------------
+
+coupling- data sharing from parent to child
+props drilling- at the time of data sharing from parent to child if any intermediate component
+have any errors then the data will stuck there
+
+Redux - state managment technology -we need to reduce coupling and make all component independent 
+to avoid props drilling
+with redux we can solve props drilling
+if there is more data use redux to share data betwwen parent and child insted of coupling
+
+store - a file used to store datas in redux.
+        All components can access the datas from inside the store
+
+
+libraries for redux
+----------------------
+
+-redux
+-react-redux
+-redux-thunk
+npm i redux react-redux redux-thunk
+
+
+createStore - method in redux used to create a store
+
+in redux middleware used to make redux as a asynchrnous (actually redux is synchronous so all
+ asynchrnous function inside redux will behave as synchronous)
+
+ thunk - it is used to create middleware
+
+http Methods In React
+-----------------------
+
+axios - library used to call api
+
+useDispatch - hook used to dispatch a function in a component
+it is comming from react redux
+
+useSelector - hook used to access data from component
+
+
+
+optimize techinque of react app
+--------------------------------
+
+1-code spiltting
+2-component lazyloading
+3-virtulization
+4-server side rendering
+5-memoization
+
+
+
+
+
+ Explain lifecycle methods of React component in detail?
+----------------------------------------------------------
+
+ created, updated, and destroyed. The lifecycle methods of a 
+React component can be divided into three categories:
+
+
+ a)Mounting methods 
+
+- These methods are called when the 
+component is first created and added to the DOM. The mounting 
+methods are constructor(), static getDerivedStateFromProps(), 
+render(), componentDidMount().
+
+
+b) Updating methods - 
+
+These methods are called when the 
+component's state or props are updated and the component needs 
+to re-render. The updating methods are static 
+getDerivedStateFromProps(), shouldComponentUpdate(), 
+render(), getSnapshotBeforeUpdate(), componentDidUpdate().
+
+c) Unmounting methods -
+
+ These methods are called when the 
+component is removed from the DOM. The unmounting method is
+componentWillUnmount()
+
+
+
+ What are synthetic events in React?
+---------------------------------------
+1- React uses a synthetic event system to handle events, which allows for a 
+consistent API across different browsers.
+
+2-Synthetic events in React are a cross-browser abstraction layer 
+over native browser events. React provides a set of event handlers 
+that work consistently across different browsers and provide 
+additional features, such as automatic event delegation and event 
+pooling.
+
+what do you understand by refs in react
+-----------------------------------------
+refs is used for reference in react
+
+Refs are a way to access DOM elements or components directly 
+from the React code
+
+
+
+
+ Explain Flux?
+---------------------
+Flux is an application architucture for building ui
+ 
+Flux is an application architecture pattern used for building 
+scalable and maintainable web applications. It was originally 
+created by Facebook to solve the problems they faced while 
+building large-scale, data-driven applications. The Flux 
+architecture pattern consists of four major components:
+- Dispatcher: A central hub that manages all data flow in a Flux 
+application. It receives actions and dispatches them to the 
+appropriate stores.
+- Stores: Contain the application state and logic for handling 
+actions. They respond to dispatched actions by updating their state
+and emitting a change event.
+- Actions: Plain JavaScript objects that represent the user's 
+intentions. They are created by user interaction or by network 
+events, and are dispatched to the dispatcher.
+- Views: React components that display the data and respond to 
+user actions by creating and dispatching actions.
+
+
+What are the three principles that Redux follows
+-----------------------------------------------
+1-- Single source of truth
+2-- - State is read-only
+3-- Changes are made with pure functions
+
+
+
+How is Redux different from Flux?
+------------------------------------------
+Flux is a design pattern for managing the state of a React 
+application, while Redux is a library that implements the Flux 
+pattern.
+The main difference between Flux and Redux is that Flux has 
+multiple stores, while Redux has a single store.
+
+
+
+middleware is used to handle the request
+-----------------------------------------
+
+
+
+
+
+
+38) List some of the cases when you should use Refs?
+-----------------------------------------------------
+Refs should be used when we need to access the DOM nodes 
+directly or to get a reference to a component instance. Some 
+common use cases for Refs include:
+- Managing focus, text selection, or media playback
+- Triggering imperative animations or integrating with third-party 
+libraries that need direct access to the DOM
+- Integrating with a non-React component that requires a reference
+to a DOM node
+- Implementing a custom form element that requires access to its 
+underlying DOM node
+
+
+
+
+
+
+Why do we need a router in React?
+---------------------------------------
+In traditional server-side applications, when a user clicks on a link,
+the server would load a new page and return the HTML for that 
+page. In a single-page application (SPA) built with React, 
+however, the entire application is loaded on the client-side, and the
+content is updated dynamically based on user actions.
+A router is needed in React to handle client-side routing, allowing 
+users to navigate to different parts of the application without a full 
+page refresh. This creates a more seamless user experience and 
+makes the application feel more like a traditional desktop 
+application.
+53) List down the advantages of React Router

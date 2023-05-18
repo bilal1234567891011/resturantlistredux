@@ -1,10 +1,12 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import './Restcard.css'
+import {Link} from 'react-router-dom'
 
 function Restcard({restdata}) {
   return (
     <>
+    <Link to={`/view-restuarant/${restdata.id}`} style={{textDecoration:'none',color:'white'}}>
 <Card style={{ width: '16rem' }} className="d1" >
       <Card.Img variant="top" src={restdata.photograph} />
       <Card.Body>
@@ -15,6 +17,7 @@ function Restcard({restdata}) {
         </Card.Text>
       </Card.Body>
     </Card>
+    </Link>
     </>
   )
 }

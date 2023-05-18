@@ -7,7 +7,7 @@ function Header() {
     <div>
          <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img
               alt=""
               src="https://i.postimg.cc/gJNsdpdz/images-6.jpg"
